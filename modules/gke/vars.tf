@@ -3,7 +3,7 @@ variable "clusters" {
   type = map(any)
   default = {
     test-cluster = {
-      location   = "us-east1"
+      location   = "us-west1"
       issue_cert = "true"
     }
   }
