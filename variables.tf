@@ -2,7 +2,7 @@
 variable "clusters" {
   type = map(any)
   default = {
-    weather-app = {
+    tide-app = {
       location   = "us-west1-b"
       issue_cert = "false"
       zone       = "us-west1-b"
@@ -14,12 +14,12 @@ variable "clusters" {
 variable "node-pool" {
   type = map(any)
   default = {
-    weather-app-node-pool = {
+    tide-node-pool = {
       location     = "us-west1-b"
       node_count   = 3
-      labels       = "test"
+      labels       = "application"
       machine_type = "n1-standard-1"
-      cluster      = "weather-app"
+      cluster      = "tide-app"
     }
 
 
